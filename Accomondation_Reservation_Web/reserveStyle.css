@@ -1,0 +1,73 @@
+body
+{
+    background-image: url("images/ReserveBack.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+.formReserve
+{
+    
+    
+    margin-left: 600px;
+    margin-top: 5px;
+    opacity: 0.87;
+    width: 40%;
+  
+}
+caption,td,.formReserve
+{
+    border: 2px solid  rgb(205, 237, 240);
+    background-color: #437ede;
+    color: rgb(230, 211, 238);
+    border-collapse: collapse;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    padding-left: 30px;
+    font-size: 1.1em;
+
+}
+ul
+{
+
+    list-style-type:none;
+}
+li
+{
+ margin-bottom: 10px;
+}
+
+#sub
+{
+   
+    background-color: rgb(157, 178, 250);
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-style: oblique;
+    font-weight: bolder;
+    border:2px solid  whitesmoke;
+    text-align: center; 
+    margin-top: 2px;   
+    border-radius: 30%;
+    height: 100px;
+    padding-bottom: 10px;
+    visibility: visible;
+   
+
+    
+}
+#lnk
+{
+border: 2px solid  rgb(205, 237, 240);
+background-color: #437ede;
+color: rgb(230, 211, 238);
+border-collapse: collapse;
+text-align: center;
+font-style: italic;
+font-weight: bolder;
+font-size: 1.7em;
+padding: 2px;
+}

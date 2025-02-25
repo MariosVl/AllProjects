@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+   <link rel="stylesheet" href="reserveStyle.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <a href="index.html" id="lnk">Επιστροφή στην Αρχική</a>
+    <form method="post" action=reserveAction.php> 
+    <table class="formReserve">
+        <caption>Φόρμα Κράτησης Πακέτου Διακοπών</caption>
+        <tr>
+            <td>Όνομα</td>
+            <td><input type="text" size="30" name="name"></td>
+        </tr>
+        <tr>
+            <td>Επώνυμο</td>
+            <td><input type="text" size="30" name="surname"></td>
+        </tr>
+        <tr>
+            <td>Τηλέφωνο Επικοινωνίας:</td>
+            <td><input type="text" size="30" name="phone"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" size="30" name="email"></td>
+        </tr>
+        <tr >
+            <td>Επιλέξτε Προορισμό</td>
+            <td> 
+                <ul> 
+             <li> <input type="radio" name="Destination" value="Κέρκυρα"> Κέρκυρα  </li> 
+             <li>   <input type="radio" name="Destination" value="Ρόδος">    Ρόδος   <li>
+             <li> <input type="radio" name="Destination" value="Λειψοί">  Λειψοί  </li>
+             <li> <input type="radio" name="Destination" value="Λευκάδα">  Λευκάδα </li>
+            </ul>
+            </td>
+        
+        </tr>
+        <tr>
+            <td>Επιλέξτε Δωμάτιο</td>
+            <td> 
+                <ul>
+             <li>  <input type="radio" name="Room" value="Μονόκλινο">  Μονόκλινο</li>
+             <li>  <input type="radio" name="Room" value="Δίκλινο">      Δίκλινο </li>
+             <li>  <input type="radio" name="Room" value="Τρίκλινο">     Τρίκλινο </li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Παροχή Διατροφής</td>
+            <td> 
+            <ul>
+                <li>  <input type="radio" name="Food" value="Πρωινό">  Πρωινό  </li> 
+                    <li>  <input type="radio" name="Food" value="Πλήρης_Διατροφή"> Πλήρης Διατροφή </li> 
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Ημέρες Διαμονής</td>
+            <td><input type="text"size="20" name="Days"> </td>
+        </tr>
+        <tr>
+
+            <td>Προσωπικός Κωδικός</td>
+            <td><input type="password" size="20" name="password"></td>
+        </tr>
+        <tr>
+            <td>Οικονομικότερη Επιλογή </td>
+            <td><button type="submit" id="minBut" name="submit" >Υποβολή</button> <button type="reset" id="clear" name="clean" >Εκκαθάριση</button></td>
+        </tr>
+    </table>
+</form>
+<form method="post" action=searchAction.php>
+
+<table  class="formReserve">
+
+<tr>
+ <td>Αναζήτηση μέσω προσωπικού κωδικού </br> <input type="password" size="20" name="pass"></td>
+ <td><button type="submit" id="srch" name="search">SEARCH</button> <button type="reset" id="empty" name="empty_pass" >Εκκαθάριση</button></td>
+</tr>
+
+</table>
+
+</form>
+
+</body> 
+</html>

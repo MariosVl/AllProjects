@@ -1,0 +1,96 @@
+body
+{
+    background-image: url('images/aegen.jpg');
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.head
+{
+    width: 30%;
+    background-color:  rgba(98, 223, 212, 0.76);
+    position:fixed;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color:#d9eb9d;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 910px;
+    border-radius: 50%;
+    opacity: 0.95;
+}
+.Info
+{
+    
+    background-color: rgba(98, 223, 212, 0.76);
+    margin-top: 30px;
+    opacity: 0.95;
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    padding-top: 40px;
+    margin-left: 10px;
+    
+}
+#pictLogo{
+    margin-top: 250px;
+    opacity: 0.70;
+    margin-left: 400px;
+    width: 45%;
+    height:150px;
+    position: fixed;
+    size: 10px;
+
+    
+ 
+}
+
+#pictCrcl
+{
+    border-radius:60%;
+    height: 110px;
+    width: 20%;
+    margin-right: 200px;
+    margin-top: 75px;
+    margin-left:1200px;
+    position:fixed;
+    opacity: 0.80;
+}
+#vd1
+{
+    
+    position: fixed;
+    margin-top: 30px;
+    height: 200px;
+    width: 20%;
+    margin-left: 1200px;
+
+}
+#vd2
+{
+   
+    height: 200px; 
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 10px;
+    position: fixed;
+}
+
+#lnk
+{
+ border: 2px solid  rgb(205, 237, 240);
+background-color: #437ede;
+color: rgb(230, 211, 238);
+border-collapse: collapse;
+text-align: center;
+font-style: italic;
+font-weight: bolder;
+font-size: 1.7em;
+padding: 2px;
+}

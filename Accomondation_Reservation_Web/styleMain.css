@@ -1,0 +1,247 @@
+body
+{
+    background-image: url("images/center.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;  
+}
+.head
+{
+    width: 30%;
+    background-color:  rgba(98, 223, 212, 0.76);
+    position:fixed;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color:#d9eb9d;
+    font-style: italic;
+    margin-top: 100px;
+    margin-left: 800px;
+    border-radius: 50%;
+    opacity: 0.95;
+}
+#menu
+{
+    display:inline-block;
+    position: fixed;
+    background-color:  rgba(98, 223, 212, 0.76);
+    border-radius: 50px;
+    text-align: left;
+    padding: 10px;
+    top:0;
+    margin-top: 5px;
+    width: 98%;
+}
+.buttons
+{
+    height: 50px;
+    width: 200px;
+    margin-right: 70px;
+    margin-left: 95px;
+    border-radius: 50%;
+    text-align:center;
+    font-style: oblique;
+    font-weight: bolder;
+    background-image: url("images/aegen.jpg");
+    background-position:center;
+    /*border: 2px solid #99cfc4;*/
+    color:white;
+    
+}
+#pict1{
+    margin-top: 520px;
+    opacity: 0.68;
+    margin-left: 400px;
+    width:50%;
+    height:150px;
+    position: fixed;
+    size: 10px;
+    
+ 
+}
+#pict2Circle
+{
+    border-radius:75%;
+    height: 130px;
+    width: 20%;
+    margin-right: 200px;
+    margin-top: 160px;
+    margin-left:1180px;
+    position:fixed;
+    opacity: 0.80;
+}
+/*
+#pict3Circle
+{
+   height: 140px;
+   width: 22%;
+   border-radius: 35%;
+   margin-bottom: 600px;
+   margin-top: 90px;
+   position:fixed;
+}
+#video1
+{
+    position: fixed;
+    margin-top: 520px;
+}*/
+.priceTables1
+{
+    
+    background-color: rgb(199, 78, 78);
+    margin-top: 130px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: whitesmoke;
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    
+}
+caption
+{
+   color: whitesmoke;
+   font-style: oblique;
+   font-weight: bolder;
+   background-color: rgba(98, 223, 212, 0.76);
+   border-radius: 50%;
+   text-align: center;
+   height: 50px;
+   width: 70%;
+   padding-top: 10px;
+   margin-bottom: 30px;
+   font-size: 2em;
+   
+
+
+}
+#priceTables1
+{
+    
+    background-color: rgb(199, 78, 78);
+    margin-top: 50px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: whitesmoke;
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    margin-left: 700px;
+    
+}
+.priceTables2
+{
+    background-color: rgb(152, 192, 107);
+    margin-top: 130px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: rgb(221, 52, 52);
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    
+}
+#priceTables2
+{
+    background-color: rgb(152, 192, 107);
+    margin-top: 50px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: rgb(221, 52, 52);
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    margin-left: 700px;
+    
+    
+}
+.priceTables3
+{
+    background-color: rgb(132, 107, 192);
+    margin-top: 130px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: rgb(162, 218, 208);
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    
+}
+#priceTables3
+{
+    background-color:  rgb(132, 107, 192);
+    margin-top: 50px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: rgb(162, 218, 208);
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    margin-left: 700px;
+    
+}
+.priceTables4
+{
+    background-color: rgb(78, 140, 199);
+    margin-top: 130px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: rgb(231, 216, 216);
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+
+}
+#priceTables4
+{
+    background-color:  rgb(78, 140, 199);
+    margin-top: 50px;
+    opacity: 0.95;
+    font-size: 1.3em;
+    color: rgb(231, 216, 216);
+    font-style: oblique;
+    text-align:center;
+    border-radius: 10%;
+    width:50%;
+    height: 130px;
+    font-weight: bolder;
+    margin-left: 700px;
+   
+}
+
+
+#rd
+{
+    margin-top: 250px;
+    
+}
+
+#dest
+{
+color:whitesmoke;
+background-color: rgb(84, 195, 195);
+font-weight:bolder;
+font-size: 1.1em;
+}
