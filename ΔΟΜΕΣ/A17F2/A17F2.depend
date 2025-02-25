@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1615755178 source:c:\users\mario\onedrive\Έγγραφα\a17f2\a17f2.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
