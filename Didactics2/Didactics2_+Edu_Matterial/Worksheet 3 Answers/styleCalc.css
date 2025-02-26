@@ -1,0 +1,136 @@
+
+body
+{
+
+    background-color: rgb(221, 219, 195);
+    position:fixed;
+    
+}
+
+
+
+ul
+{
+    list-style-type: none;
+}
+
+.calcTable
+{
+    
+    
+    margin-left: 50px;
+    margin-top: 0px;
+    width: 20%;
+    height: 450px;
+    
+   
+  
+}
+caption,td
+{
+    border: 2px solid  rgb(205, 237, 240);
+    background-color: #437ede;
+    color: rgb(230, 211, 238);
+    border-collapse:separate;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 1.1em;
+
+}
+
+
+#result
+{
+    position: fixed;
+    background-color:  #437ede;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 550px;
+    margin-left:550px;
+    width: 20%;
+    top:5px;
+    font-size:1.5em;
+    color:rgb(238, 233, 233);
+    font-weight: bold;
+    font-style:italic;
+    height: 80px;
+}
+
+header
+{
+    position: fixed;
+    background-color: #437ede;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    top:0;
+    margin-top: 30px;
+    width: 30%;
+    height:90px;
+    color:#e8ecea;
+    margin-left:500px;
+    font-size: 2em;
+    font-weight: bold;
+    font-style:italic;
+    padding-top: 50px;
+}
+
+.Links
+{
+    position: fixed;
+  background-color:  #437ede;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 215px;
+  margin-left:750px;
+  width: 35%;
+  top:5px;
+  font-size:1.2em;
+  color:rgb(238, 233, 233);
+  font-weight: bold;
+  font-style:italic;
+  height: 160px;
+}
+
+a
+{
+    color: whitesmoke;
+
+}
+
+#calcPaintLogoBlack
+{
+  border: 3px solid #d1cbd9;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  width: 140px;
+  height: 130px;
+  
+}
+
+#MathActionsCalculator
+{
+    border: 3px solid #d1cbd9;
+  border-radius: 50%;
+  margin-left: 1000px;
+  margin-bottom: 50px;
+  width: 140px;
+  height: 130px;
+
+}
+#HTML_CSS_JS_Calc_video
+{
+    position: fixed;
+    margin-top: 480px;
+    height: 200px;
+    width: 25%;
+    margin-left: 850px;
+    background-color:  #4017d4;
+    border-radius:5%;
+    
+}

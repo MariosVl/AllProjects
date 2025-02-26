@@ -1,0 +1,96 @@
+/*Creation of data base */
+
+CREATE DATABASE "Inf_Retr_hw3";
+  
+
+--Creation of a basic table with required fields
+CREATE TABLE docs
+(id SERIAL PRIMARY KEY NOT NULL,
+title text NOT NULL,
+abstract text NOT NULL);
+
+--Creation of temporary table which has as a field a json file
+CREATE TEMPORARY TABLE fil (let json);
+
+--Copy data from json file to temporary table 
+COPY fil(let) from 'C:\data\data.json' csv quote e'\x01' delimiter e'\x02';
+
+--Creation of a type which make the final structure of data before these insert into basic table 
+CREATE TYPE doc as (title text, abstract text);
+
+--Insert data from the temporary table to basic table
+INSERT INTO docs(title,abstract)
+SELECT *
+FROM json_populate_recordset(null:: doc, (SELECT json_agg(let) FROM fil));
+
+--Add two new columns in the basic table type tsvector
+ALTER TABLE docs ADD "title_tsv" tsvector;
+
+ALTER TABLE docs ADD "abstract_tsv" tsvector;
+
+-- Creation of two new indexes in new columns
+CREATE INDEX idTitle ON docs USING gin(title_tsv);
+UPDATE docs 
+SET title_tsv = (to_tsvector(title));
+
+CREATE INDEX idAbstract ON docs USING gin(abstract_tsv);
+UPDATE docs 
+SET abstract_tsv = (to_tsvector(abstract));
+
+-- Question 1
+SELECT COUNT(*)
+ FROM docs
+WHERE (title_tsv @@ (to_tsquery('rat')||to_tsquery('liver')));
+
+--Question 2
+SELECT COUNT(*)
+ FROM docs
+WHERE (abstract_tsv @@ (to_tsquery('rat')||to_tsquery('liver')));
+
+--Question 3
+SELECT COUNT (*)
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat')||to_tsquery('liver')) OR abstract_tsv @@ (to_tsquery('rat')||to_tsquery('liver'));
+
+--Question 4
+SELECT COUNT (*)
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat')||to_tsquery('liver')) AND abstract_tsv @@ (to_tsquery('rat')||to_tsquery('liver'));
+
+--Question 5
+SELECT *
+FROM docs
+WHERE (title_tsv @@ (to_tsquery('rat')||to_tsquery('liver')));
+
+SELECT *
+ FROM docs
+WHERE (abstract_tsv @@ (to_tsquery('rat')||to_tsquery('liver')));
+
+SELECT  *
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat')||to_tsquery('liver')) OR abstract_tsv @@ (to_tsquery('rat')||to_tsquery('liver'));
+
+SELECT *
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat')||to_tsquery('liver')) AND abstract_tsv @@ (to_tsquery('rat')||to_tsquery('liver'));
+
+--Question 6
+--(rank to the files with 'cancer'AND 'liver' to ther abstract with the function ts_rank_cd())
+SELECT  ts_rank_cd(abstract_tsv, query) as rank,*
+FROM docs, to_tsquery('cancer & liver')query
+WHERE abstract_tsv @@ query
+order by rank desc;
+
+--Question 7&8 for field 'title'
+--(Find the top 10 words by their document frequency and by their collection frequency which are ndoc and nentry respectively)
+SELECT * FROM ts_stat('SELECT title_tsv FROM docs')  
+ORDER BY nentry DESC, ndoc DESC, word  
+LIMIT 10; 
+
+--Question 7&8 for field 'abstract'
+--(Find the top 10 words by their document frequency and by their collection frequency which are ndoc and nentry respectively)
+SELECT * FROM ts_stat('SELECT abstract_tsv FROM docs')  
+ORDER BY nentry DESC, ndoc DESC, word  
+LIMIT 10;
+
+

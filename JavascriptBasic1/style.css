@@ -1,0 +1,16 @@
+img
+{
+    height: 150px;
+    width: 100%;
+}
+table
+{
+    border: 6px,solid,black;
+    background-color: blue;
+    color:whitesmoke;
+    font-size: 1.04em;
+    font-weight:bolder;
+    font-style: oblique;
+    margin-left:500px ;
+    
+}

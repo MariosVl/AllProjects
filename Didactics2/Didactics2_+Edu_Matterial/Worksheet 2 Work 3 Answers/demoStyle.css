@@ -1,0 +1,64 @@
+
+
+body
+{
+
+    background-color: rgb(229, 108, 108);
+    position:fixed;
+   
+}
+
+header
+{
+
+border: 4px solid white;
+background-color: #4f4fe0;
+color: white;
+text-align: center;
+font-size: 4em;
+font-weight: lighter;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: oblique;
+color:#f5ea51;
+padding: 20px;
+
+}
+
+
+#IslandPict
+{
+    border-radius:60%;
+    height: 110px;
+    width: 20%;
+    margin-top: 150px;
+    margin-left:1200px;
+    position:fixed;
+    
+    
+}
+
+.BoatPict
+
+{
+    border: 10px solid blue;
+    padding: 50px;
+    margin: 50px;
+   
+}
+
+#JunglePict
+{
+    height: 10%;
+    width: 10%;
+    margin-bottom: 100px;
+    margin-left: 250px;
+}
+.Paragraph
+{
+   font-size: 2em;
+   font-style: italic;
+   font-weight: bolder;
+   font-family: 'Times New Roman', Times, serif;
+   color:#00ffff;
+   margin-bottom: 60px;
+}

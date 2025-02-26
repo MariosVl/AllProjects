@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form for Saving Data</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="value1">Value 1:</label>
+        <input type="text" id="value1" name="value1"><br><br>
+        
+        <label for="value2">Value 2:</label>
+        <input type="text" id="value2" name="value2"><br><br>
+        
+        <button type="button" onclick="saveData()">Save Data</button>
+        <br>
+        
+        <button type="button" onclick="returnData()">Return Data</button>
+        <!--<div id="print" ></div>-->
+
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    
+                    <th>Value1</th>
+                    <th>Value2</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Εδώ θα εμφανιστούν οι γραμμές με δεδομένα -->
+            </tbody>
+        </table>
+    </form>
+    
+    <script>
+       
+        function saveData() {
+            var value1 = document.getElementById('value1').value;
+            var value2 = document.getElementById('value2').value;
+            
+            fetch('http://localhost:5501/saveData', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({timi1:value1,timi2:value2 })
+            })
+            .then(answer => {
+                if (answer.ok) {
+                    console.log('Data saved successfully!');
+                } else {
+                    console.error('Error saving data.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        function returnData()
+        {
+            /*var form=document.getElementById("myForm");
+            var data=form.querySelector('input[name="values"]:checked');
+            var value3=data.value;*/
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+            fetch(`http://localhost:5501/keyRet`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(answer => {
+                return answer.json();
+            }).then(dataFprint=>{
+               /* const pr=document.getElementById("print");
+                pr.innerHTML=JSON.stringify(dataFprint, null, 2);*/ 
+                
+
+            dataFprint.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${item.value1}</td><td>${item.value2}`;
+                tableBody.appendChild(row);
+            });
+
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        }
+    </script>
+   
+</body>
+</html>

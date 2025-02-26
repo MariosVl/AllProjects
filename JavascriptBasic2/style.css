@@ -1,0 +1,78 @@
+#RE
+{
+    margin-top: 200px;
+    margin-left: 100px;
+    width:25%;
+    height: 250px;
+    background-image: url('real-madrid-waving-flag-260nw-1348551971.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    font-size: 1.8em;
+    color:#e61515;
+    font-weight: bolder;
+    font-style:oblique; 
+    background-color: #4fc2d6;
+    padding-right: 50px;
+    position: fixed;
+}
+
+#BC
+{
+    margin-top: 200px;
+    margin-left: 900px;
+    width:25%;
+    height: 250px;
+    background-image: url('images.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    font-size: 1.7em;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-style:oblique; 
+    background-color: #e3362d;
+    padding-right: 350px;
+    position: fixed;
+}
+.PB
+{
+    margin-top: 500px;
+    margin-left: 1100px;
+    color:whitesmoke;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;
+    position: fixed;
+}
+body
+{
+ 
+    background-color: #f57542;
+
+}
+.PR
+{
+    margin-top: 500px;
+    margin-left: 300px;
+    color:whitesmoke;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;
+    position: fixed;
+}
+header
+{
+ font-size: 3em;
+ color: white;
+ background-color:#0a93c4;
+ width: 30%;
+ height: 70px;
+ border-radius: 50%;
+ text-align: center;
+ margin-left: 500px ;
+ padding-top: 20px;
+ font-weight: bolder;
+ font-style: oblique;
+
+}

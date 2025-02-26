@@ -1,0 +1,59 @@
+1
+SELECT COUNT(*)
+FROM docs
+WHERE (title_tsv @@ (to_tsquery('rat') || to_tsquery('liver')));
+
+2
+SELECT COUNT(*)
+FROM docs
+WHERE (abstract_tsv @@ (to_tsquery('rat') || to_tsquery('liver')));
+
+3
+SELECT COUNT(*)
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat') || to_tsquery('liver'))
+OR abstract_tsv @@ (to_tsquery('rat') || to_tsquery('liver'));
+
+4
+SELECT COUNT(*)
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat') || to_tsquery('liver'))
+AND abstract_tsv @@ (to_tsquery('rat') || to_tsquery('liver'));
+
+5
+SELECT *
+FROM docs
+WHERE (title_tsv @@ (to_tsquery('rat') || to_tsquery('liver')));
+
+5.1
+SELECT *
+FROM docs
+WHERE (abstract_tsv @@ (to_tsquery('rat') || to_tsquery('liver')));
+
+5.2
+SELECT *
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat') || to_tsquery('liver'))
+OR abstract_tsv @@ (to_tsquery('rat') || to_tsquery('liver'));
+
+5.3
+SELECT *
+FROM docs
+WHERE title_tsv @@ (to_tsquery('rat') || to_tsquery('liver'))
+AND abstract_tsv @@ (to_tsquery('rat') || to_tsquery('liver'));
+
+6
+SELECT ts_rank_cd(abstract_tsv, query) as rank, *
+FROM docs, to_tsquery('cancer & liver') query
+WHERE abstract_tsv @@ query
+ORDER BY rank DESC;
+
+7
+SELECT * FROM ts_stat('SELECT title_tsv FROM docs')
+ORDER BY nentry DESC, ndoc DESC, word
+LIMIT 10;
+
+8
+SELECT * FROM ts_stat('SELECT abstract_tsv FROM docs')
+ORDER BY nentry DESC, ndoc DESC, word
+LIMIT 10;

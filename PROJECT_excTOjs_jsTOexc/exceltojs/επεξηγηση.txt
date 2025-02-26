@@ -1,0 +1,45 @@
+"use strict"; // Χρησιμοποιούμε την αυστηρή λειτουργία για να βελτιώσουμε την ποιότητα του κώδικα και να αποφύγουμε λάθη.
+
+const fileInput = document.getElementById("xls"); // Επιλέγουμε το στοιχείο με ID "xls" από το DOM.
+
+fileInput.addEventListener("change", function(event) {
+    // Προσθέτουμε έναν ακροατή γεγονότων για την αλλαγή στο input.
+
+    const file = event.target.files[0]; // Αντλούμε το επιλεγμένο αρχείο από το γεγονός.
+
+    if (file) {
+        // Ελέγχουμε αν έχει επιλεγεί ένα αρχείο.
+
+        const reader = new FileReader(); // Δημιουργούμε ένα αντικείμενο FileReader για την ανάγνωση του αρχείου.
+
+        reader.onload = function(event) {
+            // Ορίζουμε μια συνάρτηση που θα εκτελεστεί όταν ολοκληρωθεί η ανάγνωση του αρχείου.
+
+            const data = new Uint8Array(event.target.result);
+            // Δημιουργούμε έναν πίνακα Uint8Array για τα δεδομένα του αρχείου.
+
+            const workbook = XLSX.read(data, { type: 'array' });
+            // Χρησιμοποιούμε τη βιβλιοθήκη XLSX για να διαβάσουμε τα δεδομένα του αρχείου.
+
+            const sheetName = workbook.SheetNames[0];
+            // Παίρνουμε το όνομα της πρώτης φύλλου εργασίας από το αρχείο.
+
+            const worksheet = workbook.Sheets[sheetName];
+            // Παίρνουμε τα δεδομένα του πρώτου φύλλου εργασίας.
+
+            const jsonData = XLSX.utils.sheet_to_json(worksheet);
+            // Μετατρέπουμε τα δεδομένα του φύλλου εργασίας σε μορφή JSON.
+
+            console.log(jsonData);
+            // Εκτυπώνουμε τα δεδομένα JSON στην κονσόλα.
+        };
+
+        reader.onerror = function(event) {
+            // Ορίζουμε μια συνάρτηση που θα εκτελεστεί αν υπάρξει σφάλμα κατά την ανάγνωση του αρχείου.
+            console.error('Σφάλμα κατά την ανάγνωση του αρχείου:', event.target.error);
+        };
+
+        reader.readAsArrayBuffer(file);
+        // Ξεκινάμε την ανάγνωση του αρχείου ως ArrayBuffer.
+    }
+});

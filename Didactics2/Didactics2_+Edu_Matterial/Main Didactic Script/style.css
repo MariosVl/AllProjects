@@ -1,0 +1,157 @@
+
+
+body
+{
+  background-color: #6a9e76;
+  
+  position:fixed;
+
+}
+
+
+
+
+#radiusPict_booksPaint
+{
+  border: 3px solid #d1cbd9;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 200px;
+  height: 150px;
+
+}
+
+#radiusPict_StudentPaint
+{
+
+  
+
+  border: 3px solid #d1cbd9;
+  border-radius: 50%;
+  margin-left: 900px;
+  margin-top: 10px;
+  width: 200px;
+  height: 150px;
+
+}
+.TableGrade
+{
+
+
+  background-color:#4017d4;
+  font-size: 1.2em;
+  color: whitesmoke;
+  font-style: oblique;
+  text-align:center;
+  border-radius: 3%;
+  width:30%;
+  margin-top: 50px;
+  font-weight: bolder;
+  margin-left: 40px;
+  
+}
+
+#result
+{
+  
+  position: fixed;
+  background-color:  #4017d4;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 550px;
+  margin-left:650px;
+  width: 20%;
+  top:5px;
+  font-size:1.5em;
+  color:rgb(238, 233, 233);
+  font-weight: bold;
+  font-style:italic;
+  height: 60px;
+}
+
+header
+{
+  
+  position: fixed;
+  background-color:#4017d4;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  top:0;
+  margin-top: 30px;
+  width: 30%;
+  height:90px;
+  color:#e8ecea;
+  margin-left:500px;
+  font-size: 2em;
+  font-weight: bold;
+  font-style:italic;
+  padding-top: 50px;
+
+
+}
+caption
+{
+  background-color:#4017d4;
+  font-size: 1.2em;
+  color: whitesmoke;
+  font-style: oblique;
+  text-align:center;
+  width:30%;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  margin-left: 100px;
+}
+
+#Average_Video
+{
+
+  position: fixed;
+  margin-top: 480px;
+  height: 200px;
+  width: 25%;
+  margin-left: 850px;
+  background-color:  #4017d4;
+  border-radius:5%;
+
+  
+  
+
+
+}
+
+.LinksParagraph
+{
+  
+ 
+  position: fixed;
+  background-color:  #4017d4;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 215px;
+  margin-left:750px;
+  width: 35%;
+  top:5px;
+  font-size:1.2em;
+  color:rgb(238, 233, 233);
+  font-weight: bold;
+  font-style:italic;
+  height: 160px;
+ 
+
+}
+
+a
+{
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.3em;
+
+}
+
+
+
+

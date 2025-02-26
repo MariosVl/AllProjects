@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Rat liver regeneration after partial hepatectomy",
+        "abstract": "This study investigates the process of liver regeneration in rats after a partial hepatectomy, focusing on the cellular mechanisms involved in the recovery."
+    },
+    {
+        "id": 2,
+        "title": "Liver disease in rats: Implications for human liver therapy",
+        "abstract": "The paper discusses various types of liver diseases observed in rats and explores their relevance to human liver disease therapies."
+    },
+    {
+        "id": 3,
+        "title": "Cancer and liver regeneration in rats",
+        "abstract": "This research explores the relationship between liver cancer and regeneration in rats, and examines potential therapies for both conditions."
+    },
+    {
+        "id": 4,
+        "title": "Liver transplantation in rats: A model for human transplantation",
+        "abstract": "The article presents findings from experiments involving liver transplants in rats, assessing the success rate and complications of the procedure."
+    },
+    {
+        "id": 5,
+        "title": "Metabolic changes in rat liver during fasting and refeeding",
+        "abstract": "The metabolic changes that occur in the liver of rats during periods of fasting followed by refeeding are analyzed, including enzyme activity and gene expression."
+    },
+    {
+        "id": 6,
+        "title": "Hepatic fibrosis in rats induced by carbon tetrachloride",
+        "abstract": "The study examines the development of hepatic fibrosis in rats exposed to carbon tetrachloride, and its potential relevance to human liver fibrosis."
+    },
+    {
+        "id": 7,
+        "title": "Liver cancer in rats: Chemotherapy resistance mechanisms",
+        "abstract": "This paper investigates the molecular mechanisms of chemotherapy resistance in rat liver cancer models and explores potential therapeutic targets."
+    },
+    {
+        "id": 8,
+        "title": "Aging and liver function in rats: Implications for lifespan",
+        "abstract": "This study examines the effects of aging on liver function in rats, focusing on enzymatic activity and liver detoxification capacity over time."
+    },
+    {
+        "id": 9,
+        "title": "Nutritional interventions for liver health in rats",
+        "abstract": "The effects of various dietary interventions on liver health in rats are explored, with a focus on antioxidants, vitamins, and other protective nutrients."
+    },
+    {
+        "id": 10,
+        "title": "Liver transplantation in rats as a model for human organ failure",
+        "abstract": "This study reviews the use of liver transplantation in rats as a model to study human liver failure, including the challenges and successes observed."
+    },
+    {
+        "id": 11,
+        "title": "The role of liver enzymes in rat liver detoxification",
+        "abstract": "This paper discusses the various liver enzymes involved in detoxification processes in rats, and their comparative role in humans."
+    },
+    {
+        "id": 12,
+        "title": "Environmental toxins and liver damage in rats",
+        "abstract": "The study investigates how environmental toxins, such as pesticides and heavy metals, affect liver function and health in rats."
+    },
+    {
+        "id": 13,
+        "title": "Gene therapy for liver regeneration in rats",
+        "abstract": "Research on gene therapy techniques aimed at stimulating liver regeneration in rats, focusing on growth factors and genetic modifications."
+    },
+    {
+        "id": 14,
+        "title": "Liver fibrosis and cirrhosis in rats: Experimental models",
+        "abstract": "The paper reviews various experimental models used to study liver fibrosis and cirrhosis in rats, and their application to human liver diseases."
+    },
+    {
+        "id": 15,
+        "title": "Effects of alcohol consumption on rat liver function",
+        "abstract": "The effects of chronic alcohol consumption on rat liver function and metabolism, with a focus on alcoholic liver disease."
+    },
+    {
+        "id": 16,
+        "title": "Liver damage and repair mechanisms in rats",
+        "abstract": "This study looks at the cellular and molecular mechanisms involved in liver damage and subsequent repair processes in rats."
+    },
+    {
+        "id": 17,
+        "title": "Immunological responses in rat liver disease models",
+        "abstract": "The research examines the immunological responses that occur in rat liver disease models, with a focus on inflammation and immune cell infiltration."
+    },
+    {
+        "id": 18,
+        "title": "Liver enzymes in rats as biomarkers for liver disease",
+        "abstract": "The study explores the use of liver enzymes as biomarkers in rats for diagnosing liver disease and monitoring treatment efficacy."
+    },
+    {
+        "id": 19,
+        "title": "Hepatocellular carcinoma in rats: Molecular mechanisms and therapies",
+        "abstract": "This paper provides insights into the molecular mechanisms of hepatocellular carcinoma in rats, along with potential therapeutic approaches."
+    },
+    {
+        "id": 20,
+        "title": "Effects of diet on liver health in rats",
+        "abstract": "The effects of various dietary components, such as fats, proteins, and carbohydrates, on liver health in rats are discussed."
+    }
+]
