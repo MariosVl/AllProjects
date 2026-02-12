@@ -33,7 +33,7 @@ int main()
   /*Declare ande initialize all the variables and the arrays which we will use*/
   double array[N],numForcheck,sumRoutePos,sumFillRoutePos,treeHeight;
   int i,lim;
-  int *a=0,*min=N+2,j=0,level;
+  int a=0,min=N+2,j=0,level;
   char search;
   initializeInt(array,N);
   /*We fill the whole array to the 2*i+1 position with root of the value of i position /And/ to the 2*i+2 position with floor of the value of i position
